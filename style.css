@@ -1,3 +1,99 @@
 body {
-    
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.left-img-content {
+    display: flex;
+    width: 35vw;
+    height: 100vh;
+}
+
+.right-form-content {
+    display: flex;
+    flex-direction: column;
+    width: 65vw;
+    height: 100vh;
+    padding-left: 20px;
+}
+
+.bg-image {
+    display: flex;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 35vw;
+    height: 100vh;
+}
+
+.logo-image {
+    display: flex;
+    height: 50%;
+    width: 50%;
+}
+
+
+.logo-contents {
+    display: flex;
+    height: 150px;
+    width: 150px;
+    flex-direction: row;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 50%;
+}
+
+.logo-txt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 50%;
+    width: 50%;
+}
+
+.uppercontent {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 30vh;
+    font-size: 20px;
+}
+
+form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    height: 40vh;
+    padding-left: 10px;
+    padding-right: 10px;
+    gap: 10px;
+    font-size: 20px
+}
+
+.right-bottom-content {
+    display: flex;
+    height: 30vh;
+    padding: 20px;
+}
+
+.forum-grid {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    font-size: 20px
+}
+
+input {
 }

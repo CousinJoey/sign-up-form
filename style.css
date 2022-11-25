@@ -23,35 +23,37 @@ main {
     flex-direction: column;
     width: 65vw;
     height: 100vh;
-    padding-left: 20px;
+    background-image: linear-gradient(to top left, #080808, #121111);
 }
 
 .bg-image {
+    background-image: url("./Imgs/background2.jpg");
     display: flex;
     max-width: 100%;
-    margin: 0;
-    padding: 0;
-    position: absolute;
     width: 35vw;
     height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
 }
 
 .logo-image {
     display: flex;
-    height: 50%;
-    width: 50%;
+    height: 150px;
+    width: 150px;
 }
 
 
 .logo-contents {
     display: flex;
-    height: 150px;
-    width: 150px;
+    height: 20%;
+    width: 100%;
     flex-direction: row;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 50%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .5);
+    padding: 15px;
 }
 
 .logo-txt {
@@ -61,32 +63,39 @@ main {
     color: white;
     height: 50%;
     width: 50%;
+    font-size: 4vw;
 }
 
 .uppercontent {
     display: flex;
     flex-direction: column;
-    padding-left: 10px;
+    padding-left: 30px;
     padding-right: 10px;
     height: 30vh;
-    font-size: 20px;
+    font-size: 25px;
+    color: white;
 }
 
 form {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    height: 40vh;
-    padding-left: 10px;
-    padding-right: 10px;
-    gap: 10px;
-    font-size: 20px
+    height: 20vh;
+    width: 50vw;
+    padding-left: 30px;
+    padding-right: 30px;
+    gap: 20px;
+    font-size: 20px;
+    color: white
 }
 
 .right-bottom-content {
     display: flex;
     height: 30vh;
-    padding: 20px;
+    padding: 30px;
+    margin-top: 10px;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
 .forum-grid {
@@ -95,5 +104,89 @@ form {
     font-size: 20px
 }
 
-input {
+label {
+    display: flex;
+    align-items: flex-end;
+    color: white;
+}
+
+input[type="text"]:focus {
+    outline: none !important;
+    border: 1px solid #ff3fe7;
+    box-shadow: 0 0 10px white;
+}
+
+input[type="email"]:focus {
+    outline: none !important;
+    border: 1px solid #ff3fe7;
+    box-shadow: 0 0 10px white;
+}
+
+input[type="password"]:focus {
+    outline: none !important;
+    border: 1px solid #ff3fe7;
+    box-shadow: 0 0 10px white;
+}
+
+button {
+    background-color: black;
+    color: #ff3fe7;
+    font-weight: 700;
+    font-size: 1.2em;
+    border: 2px solid #ff3fe7;
+    border-radius: 5px;
+    padding: 5px 20px;
+    cursor: pointer;
+    margin-top: 15%;
+}
+
+button:hover {
+    background-color: #ff3fe7;
+    color: black;
+}
+
+.acc {
+    display: flex;
+    font-size: 15px;
+    gap: 5px;
+    color: white;
+    flex-wrap: wrap;
+}
+
+em {
+    color: #f79eeb;
+}
+
+@media only screen and (max-width: 870px) {
+    .left-img-content {
+        height: 0vh;
+        width: 0vw;
+        overflow: hidden;
+    }
+
+    .right-form-content {
+        height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+    }
+
+    form {
+        width: 90vw;
+        justify-content: center;
+        align-self: center;
+    }
+
+    button {
+        margin-top: 0;
+    }
+
+    .right-bottom-content {
+        grid-column: 1/-1;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .uppercontent {
+        font-size: 22px;
+    }
 }
